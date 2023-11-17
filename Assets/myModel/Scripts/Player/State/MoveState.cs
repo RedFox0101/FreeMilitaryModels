@@ -18,6 +18,7 @@ namespace PlayerState
         public override void Update()
         {
             _entity.Move();
+            _entity.UseGravity();
         }
         public override void StartState()
         {

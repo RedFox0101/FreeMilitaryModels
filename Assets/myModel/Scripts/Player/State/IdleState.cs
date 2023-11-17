@@ -14,6 +14,11 @@ namespace PlayerState
             _input = input;
         }
 
+        public override void Update()
+        {
+            _entity.UseGravity();
+        }
+
 
         public override void StartState()
         {

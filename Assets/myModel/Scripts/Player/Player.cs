@@ -29,7 +29,6 @@ public class Player : Entity
     private void Update()
     {
         _stateMachine.State.Update();
-        Rotate();
     }
 
     public override void Move()
@@ -37,17 +36,10 @@ public class Player : Entity
         _entityInfo.CharacterController.Move(GlobalDirection * Time.deltaTime * _entityInfo.Speed);
     }
 
-    public override void Rotate()
-    {
-
-    }
 
     private void InputRotate(InputAction.CallbackContext callback)
     {
-
-
         _entityInfo.PlayerTransform.localEulerAngles += new Vector3(0, callback.ReadValue<Vector2>().x, 0) * Time.deltaTime * _entityInfo.RotateSpeed;
-
     }
 
     private void SetValue()

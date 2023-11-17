@@ -6,17 +6,29 @@ public abstract class Entity : MonoBehaviour
     [SerializeField] protected EntityInfo _entityInfo;
     [SerializeField] private Animator _animator;
 
+    private const float _gravityConst = -9.81f;
+
     protected Vector3 _direction = Vector3.zero;
     protected Vector3 _rotateDirection = Vector3.forward;
+    private float _gravitySpeed = 0;
+
     public Vector3 GlobalDirection => _entityInfo.PlayerTransform.forward * _direction.z + _entityInfo.PlayerTransform.right * _direction.x;
 
     public Animator Animator => _animator;
 
     public abstract void Move();
-    public abstract void Rotate();
 
     public virtual void UseGravity()
     {
+        if(_entityInfo.CharacterController.isGrounded)
+        {
+            _gravitySpeed = 0;
+            return;
+        }
+
+        _gravitySpeed += _gravityConst * Time.deltaTime;
+
+        _entityInfo.CharacterController.Move(Vector3.up * _gravitySpeed * Time.deltaTime);
 
     }
 
