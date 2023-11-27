@@ -19,7 +19,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ef3d27fcaf681114a840332b06bbde32, type: 2}
   - {fileID: 11400000, guid: fd00df94e64985b48b41a871d55f910d, type: 2}
   - {fileID: 11400000, guid: ce8f0bb187976c54ab05dc046451ea9e, type: 2}
-  traditionalPlayerLimits: 020406080a
+  traditionalPlayerLimits: 0102
   traditionalPlayerNeeded: 00000000020000000400000006000000080000000a000000
   traditionalDurations: 2c01000058020000b0040000
   traditionalPingLimits: 000000003200000064000000c80000002c010000
@@ -44,8 +44,8 @@ MonoBehaviour:
   isTeamGameMode: 0
   maximumAmountOfTeams: 2
   weaponOrders:
-  - weapons: 02000000010000000300000004000000
-  - weapons: 04000000030000000100000002000000
+  - weapons: 0200000001000000
+  - weapons: 0100000002000000
   winnerCheckTime: 1
   votingThreshold: 30
   preGameTime: 20

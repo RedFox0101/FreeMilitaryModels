@@ -348,14 +348,16 @@ namespace MarsFPSKit
 
                 List<Kit_SkinInfo> skinsInUse = new List<Kit_SkinInfo>();
 
-                for (int i = 0; i < enabledAttachments.Length; i++)
-                {
-                    if (ws.attachmentSlots[i].availableAttachments[enabledAttachments[i]].GetType() == typeof(Kit_SkinInfo))
-                    {
-                        Kit_SkinInfo skin = ws.attachmentSlots[i].availableAttachments[enabledAttachments[i]] as Kit_SkinInfo;
-                        skinsInUse.Add(skin);
-                    }
-                }
+                    Debug.Log(enabledAttachments.Length);
+                //for (int i = 0; i < enabledAttachments.Length; i++)
+                //{
+
+                //    if (ws.attachmentSlots[i].availableAttachments[enabledAttachments[i]].GetType() == typeof(Kit_SkinInfo))
+                //    {
+                //        Kit_SkinInfo skin = ws.attachmentSlots[i].availableAttachments[enabledAttachments[i]] as Kit_SkinInfo;
+                //        skinsInUse.Add(skin);
+                //    }
+                //}
 
                 //Create temporary list of synced attachments
                 List<Kit_AttachmentVisualBase> syncAttachments = new List<Kit_AttachmentVisualBase>();
@@ -364,6 +366,8 @@ namespace MarsFPSKit
                 //Loop through all slots
                 for (int i = 0; i < enabledAttachments.Length; i++)
                 {
+                    Debug.Log(ws.attachmentSlots[i].availableAttachments.Length);
+
                     if (ws.attachmentSlots[i].availableAttachments[enabledAttachments[i]].GetType() == typeof(Kit_AttachmentInfo))
                     {
                         Kit_AttachmentInfo attachment = ws.attachmentSlots[i].availableAttachments[enabledAttachments[i]] as Kit_AttachmentInfo;

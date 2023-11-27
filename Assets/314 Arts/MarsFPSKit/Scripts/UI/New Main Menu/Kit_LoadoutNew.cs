@@ -40,7 +40,7 @@ namespace MarsFPSKit
         /// <summary>
         /// How many loadouts do we allow?
         /// </summary>
-        public int amountOfLoadouts = 5;
+        public int amountOfLoadouts = 2;
         /// <summary>
         /// Screen id of the loadout selection
         /// </summary>
@@ -422,6 +422,8 @@ namespace MarsFPSKit
                     allLoadouts[id].loadoutWeapons[jd].goesToSlot = jd;
                     //Set default one
                     allLoadouts[id].loadoutWeapons[jd].weaponID = game.defaultWeaponsInSlot[jd];
+
+                    Debug.Log(allLoadouts[id].loadoutWeapons[jd].weaponID);
 
                     Weapons.Kit_ModernWeaponScript wpnRender = game.allWeapons[allLoadouts[id].loadoutWeapons[jd].weaponID] as Weapons.Kit_ModernWeaponScript;
 

@@ -86,15 +86,16 @@ MonoBehaviour:
   speedMultiplierBase: 1
   ragdollForce: 500
   attachmentSlotsSpecific:
-  - slotName: On Barrel
+  - slotName: 
     availableAttachmentsSpecific:
-    - {fileID: 11400000, guid: 37852efc701d37a479fff049a8dc4cf6, type: 2}
-    - {fileID: 11400000, guid: 8f0bc3a5a19b19a4bb86b7c5da5a2928, type: 2}
-    - {fileID: 11400000, guid: 790f1bc59cb0e9b4ba7b87a7ee571a1e, type: 2}
+    - {fileID: 11400000, guid: 3eb50958aa1aed74cb2d8dcf27859304, type: 2}
+    - {fileID: 11400000, guid: 3eb50958aa1aed74cb2d8dcf27859304, type: 2}
+    - {fileID: 11400000, guid: 3eb50958aa1aed74cb2d8dcf27859304, type: 2}
     overrideSlot: {fileID: 0}
-  - slotName: Skins
+  - slotName: 
     availableAttachmentsSpecific:
-    - {fileID: 11400000, guid: 37852efc701d37a479fff049a8dc4cf6, type: 2}
+    - {fileID: 11400000, guid: 3eb50958aa1aed74cb2d8dcf27859304, type: 2}
+    - {fileID: 11400000, guid: 3eb50958aa1aed74cb2d8dcf27859304, type: 2}
     - {fileID: 11400000, guid: 3eb50958aa1aed74cb2d8dcf27859304, type: 2}
     overrideSlot: {fileID: 0}
   attachmentSlotOverride: {fileID: 0}
@@ -275,4 +276,4 @@ MonoBehaviour:
     type: 3}
   useGenericWalkAnim: 1
   useGenericRunAnim: 1
-  gameGunID: 1
+  gameGunID: 0
