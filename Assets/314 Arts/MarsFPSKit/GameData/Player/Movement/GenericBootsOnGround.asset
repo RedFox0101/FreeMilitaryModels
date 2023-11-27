@@ -19,7 +19,7 @@ MonoBehaviour:
   airControlSprintControl: 1
   gravityMultiplier: 2.2
   jumpSpeed: 8
-  jumpMaxCount: 2
+  jumpMaxCount: 1
   jumpStaminaCost: 3
   jumpAnimations:
   - Jump

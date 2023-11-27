@@ -33,8 +33,8 @@ namespace MarsFPSKit
             {
                 //Enable/Disable based on assigned game modes
                 singleplayerButton.gameObject.SetActive(menuManager.game.allSingleplayerGameModes.Length > 0 && menuManager.singleplayer);
-                coopButton.gameObject.SetActive(menuManager.game.allCoopGameModes.Length > 0 && menuManager.coop);
-                multiplayerButton.gameObject.SetActive(menuManager.game.allPvpGameModes.Length > 0);
+                //coopButton.gameObject.SetActive(menuManager.game.allCoopGameModes.Length > 0 && menuManager.coop);
+                //multiplayerButton.gameObject.SetActive(menuManager.game.allPvpGameModes.Length > 0);
 
                 //Create Callback
                 singleplayerButton.onClick.AddListener(delegate { PlaySingleplayer(); });
